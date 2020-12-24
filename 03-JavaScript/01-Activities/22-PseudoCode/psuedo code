@@ -1,0 +1,13 @@
+// declare rock, paper, and scissors
+
+// prompt use for input - pick rock, paper, or scissors
+
+// check if use input is rock, paper, or scissors
+
+// if users input is not rock, paper, or scissors, send alert telling them bad input
+
+//computer picks rock, paper, or scissors
+
+// if user plays rock over computer playing scissors user wins, alert them that they win
+
+// if user loses, alert htem that they lost
