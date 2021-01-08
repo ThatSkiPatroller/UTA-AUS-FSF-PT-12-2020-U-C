@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location Redirect</title>
+</head>
+<body>
+    <script>
+        console.log(window.navigator.userAgent);
+        if (window.navigator.userAgent.includes("Mac")) {
+            console.log("User is on a Mac.. ew");
+        } else if (window.navigator.userAgent.includes("Windows")) {
+            console.log("ohh you're on Windows, thank god..");
+        }
+var successFn = function (position) {
+    console.log('success!', position)
+}
+var errFn = function (err) {
+    console.log('error!', err);
+}
+        console.log(window.navigator.geolocation.getCurrentPosition(successFn, errFn));
+    </script>
+</body>
+</html>

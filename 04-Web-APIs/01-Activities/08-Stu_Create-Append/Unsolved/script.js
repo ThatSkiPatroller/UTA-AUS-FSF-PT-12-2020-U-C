@@ -9,6 +9,7 @@ var favoriteEl = document.createElement("div");
 var listEl = document.createElement("ol");
 // Create ordered list items
 var li1 = document.createElement("li");
+
 var li2 = document.createElement("li");
 var li3 = document.createElement("li");
 var li4 = document.createElement("li");
@@ -17,6 +18,11 @@ h1El.textContent = "Welcome to my page";
 kittenEl.textContent = "This is my kitten 🐱.";
 nameEl.textContent = "His name is Jax.";
 favoriteEl.textContent = "My favorite foods are:";
+
+li1.textContent = "apple";
+li2.textContent ="Pizza";
+li3.textContent = "Dumplings";
+li4.textContent = "Cupcakes";
 
 body.appendChild(h1El);
 body.appendChild(infoEl);
@@ -36,3 +42,4 @@ kittenEl.setAttribute("style", "font-size:25px; text-align:center;");
 favoriteEl.setAttribute("style", "font-size:20px;");
 
 // TODO: Add ordered list items containing four favorite foods
+li1.setAttribute("style", " color:white; background: #6666666; padding: 5px; margin-20px")

@@ -26,7 +26,25 @@ function prepareRead() {
 }
 
 function speedRead() {
+  //append mainEl div
+  mainEl.appendChild(bodyEl);
+  // /set interval in a variable
+  var poemInterval = setInterval (
+    function() {
+      if (words[i] === undefined) {
+        //clear interval if no more words remain
+        clearInterval(poemInterval);
+      } else {
+        // Add current word as text content of mainEl div
+        mainEl.textContent = word[i];
+        // Increment - i
+        i++;
+      }
+  )
+};
   //Add Your Code Here
-}
+  // millisecondsPerWord.textContent = "";
+  // bodyEl.appendChild(poem);
+   
 
 prepareRead();

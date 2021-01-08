@@ -26,7 +26,7 @@
 
           alert("New mileage: " + this.mileage);
         },
-
+// still accessed by car.driveToWork 
         driveAroundWorld: function() {
           alert("Old Mileage: " + this.mileage);
 
@@ -48,14 +48,31 @@
         }
       };
 
+// how would we logg..
+//the cars make
+//console.log(car.make);
+//the car's model
+//console.log(car.model)
+//car's mileage
+//console.log(car.mileage)
+//run the car's driveToWork method?
+//car.driveToWork();
+//run driveAroundWorld method?
+//car.driveAroundWorld();
+// getTuneUp method?
+//car.getTuneUp();
       // FUNCTIONS
       // ==============================================================================
 
       // TO DO: Log all of our car's current stats to the console.
       function reWriteStats() {
-        
+        console.log(car.make)
+        console.log(car.model)
+        console.log(car.color)
+        console.log(car.mileage)
+        console.log(car.isWorking)
       }
-
+reWriteStats();
       // MAIN PROCESS
       // ==============================================================================
 
@@ -66,7 +83,22 @@
         letter = prompt("Type 'h' to honk, 'd' to drive to work, 'w' to drive around the world, or 't' to get a tuneup.");
         
         // TO DO: Call the different car methods
+        if (letter === "h") {
+          car.honk();
+        }
+        if (letter === "d") {
+          car.driveToWork();
+        }
+        if (letter === "t") {
+          car.getTuneUp();
+        }
+        if (letter === "w") {
+          car.driveAroundWorld();
+        }
+        if (mileage > 2) {
+        alert ("Car is bad!");
       }
+    }
 
     </script>
 

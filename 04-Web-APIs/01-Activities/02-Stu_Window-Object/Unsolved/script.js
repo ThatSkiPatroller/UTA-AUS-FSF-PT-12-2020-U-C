@@ -10,3 +10,5 @@ console.log(document.documentElement);
 // TODO: What will the following line of code log?
 console.log(document.head);
 
+console.log(object.keys(window).length);
+console.log(object.keys(window);
