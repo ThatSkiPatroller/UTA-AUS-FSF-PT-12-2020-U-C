@@ -62,16 +62,26 @@
         <script type="text/javascript">
           $(document).ready(function() {
 
+            var randomNumber = Math.ceil(Math.random() * 4);
+            console.log(typeof randomNumber);
+            
+
             // Here we create the on click event that gets the user's pick
             $(".btn-choice").on("click", function() {
-
-              console.log("You clicked a button!!");
-
+              var randomNumber = Math.ceil(Math.random() * 4);
+              console.log(randomNumber);
+              var test = $(this).val();
+              // console.log("You clicked a button!!");
+              console.log(typeof test);
+              
               // Add code to have the computer guess a random number between 1 and 4
               // Then determine which button was clicked
               // Compare the computer and user guess
-              // Inform the user if the've guessed correctly or incorrectly
 
+              if (parseInt(randomNumber) == test) {
+                console.log("yay");
+              };
+              // Inform the user if they've guessed correctly or incorrectly
             });
           });
 

@@ -12,7 +12,7 @@
 
 <body>
 
-  <h1>Click to Eat Sandwich</h1>
+  <h1 id="click">Click to Eat Sandwich</h1>
   <h3 id="pbj">Peanut Butter Jelly</h3>
   <h3 id="grilledcheese">Grilled Cheese</h3>
   <h3 id="roastbeef">Roast Beef</h3>
@@ -32,6 +32,11 @@
       // Here we create variables for tracking the number of sandwiches eaten
       // ...
 
+      // counter
+      var pbjCounter = 0;
+      var griCounter = 0;
+      var roaCounter = 0;
+
 
       // ...
 
@@ -40,8 +45,11 @@
       // Here we create various on "click" functions which capture the clicks
       // Inside each click event is the code to create an alert, update the counter, then show the updated count.
       // ...
-
-
+        $("#pbj").on("click", function () {
+          alert("ew gross");
+          pbjCounter++;
+        });
+        
       // ...
 
     });

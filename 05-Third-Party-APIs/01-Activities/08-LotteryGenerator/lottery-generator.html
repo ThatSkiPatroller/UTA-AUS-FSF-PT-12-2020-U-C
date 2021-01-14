@@ -24,7 +24,15 @@
       <button id="random-button" class="btn btn-primary btn-lg">
         <h1>?</h1>
       </button>
-
+    <div id="random-number1"></div>
+    <div id="random-number2"></div>
+    <div id="random-number3"></div>
+    <div id="random-number4"></div>
+    <div id="random-number5"></div>
+    <div id="random-number6"></div>
+    <div id="random-number7"></div>
+    <div id="random-number8"></div>
+    <div id="random-number9"></div>
     </div>
 
   </div>
@@ -36,7 +44,33 @@
     $(document).ready(function () {
 
       //jquery code here
+      $("#random-button").on("click", function () {
+        $()
+        var random = (Math.floor(Math.random()* 9) + 1);
+        $("#random-number1").text(random);
+      });
+      $("#random-button").on("click", function () {
+        var random = (Math.floor(Math.random()* 9) + 1);
+        $("#random-number2").text(random);
+      });
 
+      $("#random-button").on("click", function () {
+        var random = (Math.floor(Math.random()* 9) + 1);
+        $("#random-number3").text(random);
+
+// Prof's code
+$("#random-button").on("click", function () {
+  var lottoNumber = "";
+
+  for (var i = 0; i < 9; i++) {
+    var random = Math.floor(Math.random() * 10);
+    lottoNumber = random + lottoNumber;
+  }
+
+  var finalNumber = lottoNumbers.join('');
+  $("#random-number").prepend("<br><br>" +lottoNumber)
+})
+    });
     });
   </script>
 
