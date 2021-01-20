@@ -61,7 +61,7 @@ This homework is graded based on the following criteria:
 * Application user experience is intuitive and easy to navigate.
 
 * Application user interface style is clean and polished.
-
+ 
 * Application resembles the mock-up functionality provided in the homework instructions.
 
 ### Repository Quality: 13%
