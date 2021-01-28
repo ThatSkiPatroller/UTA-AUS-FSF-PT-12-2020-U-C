@@ -9,3 +9,7 @@ fetch(
     console.log(data);
   });
 // Parameter explanation.
+// per page = results per page
+// state = state of the current issue
+// sort = sorted by created, updated or comments
+// direction = sorting by ascending or descending

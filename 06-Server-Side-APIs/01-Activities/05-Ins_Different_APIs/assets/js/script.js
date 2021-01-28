@@ -18,8 +18,7 @@ $.ajax({
 }).then(function (response) {
   console.log('Ajax Reponse \n-------------');
   console.log(response);
-});
-
+}); 
 
 
 
