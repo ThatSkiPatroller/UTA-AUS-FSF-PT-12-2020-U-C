@@ -73,6 +73,7 @@ var displayIssues = function (issues) {
 
 // What does this function do?
 // TODO: Write your answer here
+// When there are mor issues than what github has returned, we let the uesr know by printing a message
 var displayWarning = function (repo) {
   limitWarningEl.textContent = 'To see more than 30 issues, visit ';
 
@@ -83,6 +84,7 @@ var displayWarning = function (repo) {
 
   // Where does this appear on the page?
   // TODO: Write your answer here
+  // This will appear at the bottom of the page
   limitWarningEl.appendChild(linkEl);
 };
 

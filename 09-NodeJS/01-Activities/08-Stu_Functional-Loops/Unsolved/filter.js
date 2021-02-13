@@ -17,6 +17,7 @@ const isPrime = num => {
   for (let i = 2; i < num; i++) {
     // isPrime will return false if num is divisible by any number other than 1 or num.
     if (num % i === 0) return false;
+    console.log(num);
   }
   // Otherwise, isPrime will return num, unless num == 1.
   return num !== 1;
@@ -24,9 +25,11 @@ const isPrime = num => {
 
 
 // TODO: Describe how filter is working in this example. What will the value of primeArray be? 
+// returns 3, 2, 5
 const primeArray = originalArray.filter(isPrime);
 
 
 // TODO: Describe how filter is working in this example. What will the value of moreThan5Array be? 
+// returns the numbers greater than 5 (so 10)
 const moreThan5Array = originalArray.filter(num => num > 5);
 
