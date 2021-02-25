@@ -23,14 +23,14 @@ switch (operation) {
         break;
 };
 
-const op = process.argv[2];
-const firstNum = parseInt(process.argv[3]);
-const secondNum = parseInt(process.argv[4]);
+// const op = process.argv[2];
+// const firstNum = parseInt(process.argv[3]);
+// const secondNum = parseInt(process.argv[4]);
 
-if (op === 'sum') {
-    const result = maths.sum(firstNum, secondNum);
-    console.log('result for sum: ', result);
-} else if (op === 'difference') {
-    const result = maths.difference(firstNum, secondNum);
-    console.log('result for difference: ', result);
-}
+// if (op === 'sum') {
+//     const result = maths.sum(firstNum, secondNum);
+//     console.log('result for sum: ', result);
+// } else if (op === 'difference') {
+//     const result = maths.difference(firstNum, secondNum);
+//     console.log('result for difference: ', result);
+// }
