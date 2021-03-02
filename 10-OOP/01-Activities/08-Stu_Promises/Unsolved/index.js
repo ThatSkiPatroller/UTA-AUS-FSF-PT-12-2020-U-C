@@ -27,7 +27,7 @@ const studentDistracted = userInput !== 'coding';
 const practiceCoding = () => {
   return new Promise ((resolve, reject)=>{
     if (studentDistracted) {
-      reject({new Error('Not coding. Student is distracted')});
+      reject(new Error('Not coding. Student is distracted'));
     } else {
       resolve('We are coding!');
     }

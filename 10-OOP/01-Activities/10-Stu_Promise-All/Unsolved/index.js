@@ -1,4 +1,4 @@
-const apiCallDurations = [3000, 4000, 5000, 6000]; // can add 10000 and see error thrown
+const apiCallDurations = [3000, 4000, 5000, 6000, 10000]; // can add 10000 and see error thrown
 const maxDuration = 9999;
 
 const callAPI = (duration) =>
