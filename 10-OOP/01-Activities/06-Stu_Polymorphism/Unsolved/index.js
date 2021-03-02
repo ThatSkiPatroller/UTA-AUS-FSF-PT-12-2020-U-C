@@ -17,8 +17,18 @@ function Student(first, last, age) {
     // Ex. 95 => 'A'
     if (typeof input === 'number') {
       // TODO: Add logic here to return a single letter grade
+      if (inRange(input,90,100)) {
+        response = "A";
+      }
+      if (inRange(input,80,89)) {
+        response = "B";
+      }
+      if (inRange(input,70, 79)) {
+        response = "C";
+      }
       return response;
     }
+      if 
     // Return a range if a letter grade was passed
     // Ex. 'A' => '90 - 100'
     if (typeof input === 'string') {
@@ -27,7 +37,7 @@ function Student(first, last, age) {
     }
   };
 }
-
+console.log(inRange(85,80,89));
 const John = new Student('John', 'Appleseed', '30');
 console.log('John.displayGrade():', John.displayGrade(95));
 console.log('John.displayGrade():', John.displayGrade('B'));

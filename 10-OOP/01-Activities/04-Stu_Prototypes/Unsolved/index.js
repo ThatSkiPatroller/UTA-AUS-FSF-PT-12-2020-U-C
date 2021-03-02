@@ -1,4 +1,5 @@
 // TODO: Add a comment describing what kind of function this is
+// This is a constructor that takes 5  arguments
 function Character(name, type, age, strength, hitpoints) {
   this.name = name;
   this.type = type;
@@ -8,6 +9,7 @@ function Character(name, type, age, strength, hitpoints) {
 }
 
 // TODO: Add a comment describing the purpose of `.prototype` in this method declaration
+// attatching printStats function to the prototype
 Character.prototype.printStats = function () {
   console.log(
     `Name: ${this.name}\nProfession: ${this.type}\nAge: ${this.age}\nStrength: ${this.strength}\nHitPoints: ${this.hitpoints}`
@@ -16,6 +18,8 @@ Character.prototype.printStats = function () {
 };
 
 // TODO: Add a comment describing the functionality of this method
+// adding a property to the character function that takes the hitpoints argument value and if it 
+// is greater than zero character is still alive, if not logs character has died
 Character.prototype.isAlive = function () {
   if (this.hitpoints > 0) {
     console.log(`${this.name} is still alive!`);
@@ -27,6 +31,8 @@ Character.prototype.isAlive = function () {
 };
 
 // TODO: Add a comment describing the functionality of this method
+// creating a new function that takes character 2's hitpoints and subtracts it from character 2's 
+// strength
 Character.prototype.attack = function (character2) {
   character2.hitpoints -= this.strength;
 };

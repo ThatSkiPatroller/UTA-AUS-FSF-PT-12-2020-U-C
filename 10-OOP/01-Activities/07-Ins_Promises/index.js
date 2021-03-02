@@ -3,6 +3,7 @@
 
 const choresDone = true;
 
+// a promise is a function but a function that is asynchronous - resolve or reject are always parameters
 // Promise
 const willGetSwitch = new Promise((resolve, reject) => {
   // Check for a desireable outcome, if so resolve the promise

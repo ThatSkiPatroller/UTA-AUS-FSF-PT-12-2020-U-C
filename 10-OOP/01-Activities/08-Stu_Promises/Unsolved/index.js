@@ -14,20 +14,36 @@ if (!userInput) {
 const studentDistracted = userInput !== 'coding';
 
 // TODO: Refactor the following to use promises
-const practiceCoding = (cb, errCb) => {
-  if (studentDistracted) {
-    errCb({
-      issue: 'Distracted',
-      message: 'Coding stopped',
-    });
-  } else {
-    cb('We are coding!');
-  }
+// const practiceCoding = (cb, errCb) => {
+//   if (studentDistracted) {
+//     errCb({
+//       issue: 'Distracted',
+//       message: 'Coding stopped',
+//     });
+//   } else {
+//     cb('We are coding!');
+//   }
+// };
+const practiceCoding = () => {
+  return new Promise ((resolve, reject)=>{
+    if (studentDistracted) {
+      reject({new Error('Not coding. Student is distracted')});
+    } else {
+      resolve('We are coding!');
+    }
+  });
 };
 
 const callback = (message) => console.log(message);
 const errorCallback = (message) => console.log(message);
 
 // TODO: Refactor to call 'practiceCoding()' and chain a 'then()' to log "We are coding in promises!" in the console
+practiceCoding()
+  .then((message)=>{
+    console.log('Resolved! ' + message);
+  })
+  .catch((error) =>{
+    console.error('Rejected! ' + error);
+  })
 // TODO: Chain a 'catch()' to log "Promise rejected: " and the error
 practiceCoding(callback, errorCallback);
