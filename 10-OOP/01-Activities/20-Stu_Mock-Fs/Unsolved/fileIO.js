@@ -1,5 +1,6 @@
 const fs = require("fs");
 
+
 function FileIO() {}
 
 FileIO.prototype.read = function(file) {
