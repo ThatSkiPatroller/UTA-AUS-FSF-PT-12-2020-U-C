@@ -18,6 +18,7 @@ describe("DayCare", () => {
       const dayCare = new DayCare();
 
       // TODO: Add a comment describing the purpose of the following method
+      // adding child to dayCare
       dayCare.addChild(child);
 
       // TODO: Add a comment describing the purpose of the following statements
@@ -32,6 +33,7 @@ describe("DayCare", () => {
       dayCare.addChild(child);
 
       // TODO: Add a comment describing the purpose of the following statement
+      // Expecting it to not be added
       expect(dayCare.children.length).toEqual(0);
     });
 

@@ -1,6 +1,6 @@
 const Algo = require("../algo");
 
-describe("Algo", () => {
+fdescribe("Algo", () => {
   describe("reverse", () => {
     it("should reverse a given string", () => {
       const str = "Hello World!";
