@@ -6,7 +6,7 @@ class Letter {
       if (validChars.includes(input) || validChars.includes(char.toLowerCase())) {
           this.visible = false;
       } else {
-          this.visible = true;
+          this.visible = true; 
       }
     }
   }
