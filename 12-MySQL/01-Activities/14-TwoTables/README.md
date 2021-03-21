@@ -35,3 +35,8 @@ Expected output:
 15.) Year: 1991 || Album Position: 1057 || Artist: Queen || Song: The Show Must Go On || Album: Innuendo
 16.) Year: 1991 || Album Position: 1057 || Artist: Queen || Song: Innuendo || Album: Innuendo
 ```
+
+artist will be connection between songs and artists
+make sure to have 5000 result in there
+artist as an input, query is matching them by artist and year - dont need a song list to map against 
+both artist and year is linked with album 
