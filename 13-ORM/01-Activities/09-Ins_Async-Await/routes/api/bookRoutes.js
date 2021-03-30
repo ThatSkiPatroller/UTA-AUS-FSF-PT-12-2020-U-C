@@ -3,9 +3,13 @@ const Book = require('../../models/Book');
 
 // Change the anonymous callback function to become Asynchronous
 router.get('/', async (req, res) => {
+  let bookData;
   // Store the bookData in a variable once the promise is resolved.
-  const bookData = await Book.findAll();
-
+  try {
+    bookData = await Book.findAll();
+  } catch (error) {
+    res.json(error);
+  }
   // Return the bookData promise inside of the JSON response
   return res.json(bookData);
 });
@@ -68,7 +72,6 @@ router.delete('/:book_id', async (req, res) => {
       book_id: req.params.book_id,
     },
   });
-
   return res.json(bookData);
 });
 
