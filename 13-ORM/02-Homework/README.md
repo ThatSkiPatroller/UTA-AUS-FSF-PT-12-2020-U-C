@@ -152,7 +152,7 @@ Your database should contain the following four models, including the requiremen
 
     * References the `Product` model's `id`.
 
-  * `tag_id`
+  
 
     * Integer.
 
