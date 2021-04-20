@@ -3,7 +3,7 @@ const mongojs = require("mongojs");
 
 const app = express();
 
-const databaseUrl = "zoo";
+const databaseUrl = "zoodb";
 const collections = ["animals"];
 
 const db = mongojs(databaseUrl, collections);
@@ -14,6 +14,37 @@ db.on("error", error => {
 
 app.get("/", (req, res) => {
   res.send("Hello world");
+});
+
+app.get("/heaviest", (req, res) => {
+  db.animals.find().sort({"weight":-1}.pretty, (err, data) => {
+    if (err) {
+      console.log(err);
+    } else {
+      res.json(data);
+    }
+  });
+});
+
+app.get("/max", (req, res) => {
+  // use .max
+  db.animals.find({"weight"}, (err, data) => {
+    if (err) {
+      console.log(err);
+    } else {
+      res.json(data);
+    }
+  })
+})
+
+app.get("/name", (req, res) => {
+  db.animals.find().sort({"name":1}.pretty, (err, data) => {
+    if (err) {
+      console.log(err);
+    } else {
+      res.json(data);
+    }
+  });
 });
 
 app.get("/all", (req, res) => {

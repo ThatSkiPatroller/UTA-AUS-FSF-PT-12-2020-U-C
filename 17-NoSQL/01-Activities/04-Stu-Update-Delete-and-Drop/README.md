@@ -7,13 +7,13 @@
 * **Your Task:**
 
 * Add Extreme Basket Weaving to your array of hobbies.
-
+db.students.update({"name": "Trace"}, {$push:{"hobbies":"extreme basket weaving"}})
 * Change the operating system of the student next to you.
 
 * Remove the student to the other side of you from your database.
 
 * Add a field of `gavecandy` with a value of `false` to everyone in the array.
-
+db.students.update({}, {$set: {"gavecandy": true}, {multi: true}})
 * Change the value of `gavecandy` to true for yourself.
 
 ## 🏆 Bonus
