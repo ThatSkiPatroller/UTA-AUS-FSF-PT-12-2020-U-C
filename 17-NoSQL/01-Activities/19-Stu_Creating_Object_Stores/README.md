@@ -16,3 +16,4 @@ In this activity, you will create an object store for your IndexedDB database.
 ## 🏆 Bonus
 
 * Use the [keyPath](https://developer.mozilla.org/en-US/docs/Web/API/IDBObjectStore/keyPath) docs to research what a `keyPath` is and how to add it to your `objectStore`.
+

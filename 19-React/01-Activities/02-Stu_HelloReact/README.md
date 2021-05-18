@@ -15,6 +15,7 @@ In this activity, we will dissect a simple React application.
 * Then go into the `src` folder and with your partner, try to answer the following questions:
 
   * What's happening inside of `src/components/HelloReact.js`? How does it relate to the content being rendered to the browser?
+  Importing the app, and exporting component
 
 ### App.js
 

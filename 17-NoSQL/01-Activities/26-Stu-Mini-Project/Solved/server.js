@@ -1,9 +1,11 @@
 const express = require("express");
+const compression = require("compression");
 const mongoose = require("mongoose");
 
 const PORT = process.env.PORT || 3000;
 
 const app = express();
+app.use(compression())
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());

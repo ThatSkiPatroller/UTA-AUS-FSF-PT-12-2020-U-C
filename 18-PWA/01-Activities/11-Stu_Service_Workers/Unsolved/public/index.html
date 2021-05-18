@@ -11,7 +11,16 @@
   <link rel="stylesheet" href="/assets/css/style.css" />
   <title>Image Gallery</title>
 </head>
-
+<script>
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+      navigator.serviceWorker.register("service-worker.js")
+        .then(reg => {
+          console.log("We found your service worker file!", reg);
+        });
+    });
+  }
+</script>
 <body>
   <nav class="navbar navbar-dark bg-primary">
     <a class="navbar-brand" href="#">Image Gallery</a>

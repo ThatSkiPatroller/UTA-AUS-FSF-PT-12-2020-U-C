@@ -129,6 +129,6 @@ self.addEventListener("fetch", event => {
           });
         });
       });
-    })
+    })                 
   );
 });

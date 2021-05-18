@@ -117,6 +117,7 @@ Your database should contain the following four models, including the requiremen
     * Integer.
   
     * References the `Category` model's `id`.
+    
 
 * `Tag`
 

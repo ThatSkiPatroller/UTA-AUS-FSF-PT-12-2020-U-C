@@ -15,12 +15,18 @@ In this activity, we will begin by installing a few helpful packages and then ex
 * While those are installing, work with your group to answer each of the following questions using the [ReactJS Documentation](https://facebook.github.io/react/):
 
 1. In the previous section we executed Create React App. What is it for?
-
+ - Installs a boiler plate app
 2. What are some benefits of using ReactJS?
+ - Reusable components
+ - Greater developer tools
+ - Virtual DOM
+ - Easier to write with JSX
 
 3. What is a React component? Hint: Check the "Components and Props" section of the React documentation.
+ - Components let you split the UI into independent, reusable pieces, and think about each piece in isolation
 
 4. What is the significance of the `ReactDOM.render` method? Hint: Check the "ReactDOM" section of the documentation.
+ - Renders user interface
 
 5. What is JSX? Why does Facebook recommend using it? Hint: Check the "Introducing JSX" section of the documentation.
 
@@ -31,3 +37,4 @@ In this activity, we will begin by installing a few helpful packages and then ex
 8. What is the significance of { } curly braces in JSX? Hint: Check the "Introducing JSX" section of the documentation.
 
 9. What is a component prop? Hint: Check the "Components and Props" section of the React documentation.
+- prop is function parameter

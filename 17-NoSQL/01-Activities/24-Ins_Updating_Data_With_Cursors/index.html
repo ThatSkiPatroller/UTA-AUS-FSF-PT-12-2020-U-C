@@ -41,11 +41,17 @@
         getCursorRequest.onsuccess = e => {
           const cursor = e.target.result;
           if (cursor) {
+            const status=cursor.value.status
+            if (status === "in-progress") {
+              const todo= cursor.value;
+              todo.status="complete"
+              cursor.update(todo);
+            }
             console.log(cursor.value);
             cursor.continue();
           } else {
             console.log("No documents left!");
-          }
+          };
         };
       };
     </script>
